@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+   .nav-link {
+      @apply text-gray-700 transition-colors hover:text-blue-600;
+   }
+
+   .section-title {
+      @apply mb-6 text-4xl font-bold text-gray-900;
+   }
+
+   .section-subtitle {
+      @apply mb-8 text-xl text-black/85;
+   }
+
+   .form-input {
+      @apply focus:border-text-blue-600 w-full rounded-lg border border-gray-200 px-4 py-3 focus:outline-none;
+   }
+
+   .form-input-with-icon {
+      @apply pl-12 pr-4;
+   }
+
+   .form-icon {
+      @apply absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400;
+   }
+}
+
+.hero-overlay {
+   @apply absolute inset-0 bg-black/40;
+}
+
+.hero-content {
+   @apply relative z-10;
+}
+
+.main-gradient {
+   background: linear-gradient(180deg, #ffc53a 0%, #b26700 100%);
+}
+
+html,
+body {
+   scroll-behavior: smooth;
+}
+
+html,
+body,
+section,
+div {
+   scroll-margin-top: 64px;
+}
